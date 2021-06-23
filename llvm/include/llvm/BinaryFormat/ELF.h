@@ -219,6 +219,7 @@ enum {
   EM_CR = 103,           // National Semiconductor CompactRISC microprocessor
   EM_F2MC16 = 104,       // Fujitsu F2MC16
   EM_MSP430 = 105,       // Texas Instruments embedded microcontroller msp430
+  EM_Y86 = 255,          // UBC y86
   EM_BLACKFIN = 106,     // Analog Devices Blackfin (DSP) processor
   EM_SE_C33 = 107,       // S1C33 Family of Seiko Epson processors
   EM_SEP = 108,          // Sharp embedded microprocessor
@@ -844,6 +845,11 @@ enum {
 #include "ELFRelocs/MSP430.def"
 };
 
+// ELF Relocation types for Y86
+enum {
+#include "ELFRelocs/Y86.def"
+};
+
 // ELF Relocation type for VE.
 enum {
 #include "ELFRelocs/VE.def"
@@ -966,6 +972,7 @@ enum : unsigned {
   SHT_MIPS_ABIFLAGS = 0x7000002a, // ABI information.
 
   SHT_MSP430_ATTRIBUTES = 0x70000003U,
+  SHT_Y86_ATTRIBUTES = 0x70000004U,
 
   SHT_RISCV_ATTRIBUTES = 0x70000003U,
 

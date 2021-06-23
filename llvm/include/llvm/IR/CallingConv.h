@@ -120,6 +120,9 @@ namespace CallingConv {
     /// MSP430_INTR - Calling convention used for MSP430 interrupt routines.
     MSP430_INTR = 69,
 
+    /// Y86_INTR - Calling convention used for Y86 interrupt routines.
+    Y86_INTR = 1021,
+
     /// X86_ThisCall - Similar to X86_StdCall. Passes first argument in ECX,
     /// others via stack. Callee is responsible for stack cleaning. MSVC uses
     /// this by default for methods in its ABI.
@@ -225,6 +228,10 @@ namespace CallingConv {
     /// Calling convention used for special MSP430 rtlib functions
     /// which have an "optimized" convention using additional registers.
     MSP430_BUILTIN = 94,
+
+    /// Calling convention used for special Y86 rtlib functions
+    /// which have an "optimized" convention using additional registers.
+    Y86_BUILTIN = 1022,
 
     /// Calling convention used for AMDPAL vertex shader if tessellation is in
     /// use.

@@ -145,6 +145,7 @@ enum Kind {
   kw_aarch64_vector_pcs,
   kw_aarch64_sve_vector_pcs,
   kw_msp430_intrcc,
+  kw_y86_intrcc,
   kw_avr_intrcc,
   kw_avr_signalcc,
   kw_ptx_kernel,

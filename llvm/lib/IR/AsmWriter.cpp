@@ -379,6 +379,7 @@ static void PrintCallingConv(unsigned cc, raw_ostream &Out) {
     Out << "aarch64_sve_vector_pcs";
     break;
   case CallingConv::MSP430_INTR:   Out << "msp430_intrcc"; break;
+  case CallingConv::Y86_INTR:      Out << "y86_intrcc"; break;
   case CallingConv::AVR_INTR:      Out << "avr_intrcc "; break;
   case CallingConv::AVR_SIGNAL:    Out << "avr_signalcc "; break;
   case CallingConv::PTX_Kernel:    Out << "ptx_kernel"; break;

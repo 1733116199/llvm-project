@@ -152,6 +152,13 @@ StringRef llvm::object::getELFRelocationTypeName(uint32_t Machine,
       break;
     }
     break;
+  case ELF::EM_Y86:
+    switch (Type) {
+#include "llvm/BinaryFormat/ELFRelocs/Y86.def"
+    default:
+      break;
+    }
+    break;
   case ELF::EM_VE:
     switch (Type) {
 #include "llvm/BinaryFormat/ELFRelocs/VE.def"
